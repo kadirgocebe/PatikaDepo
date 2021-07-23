@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class recDesen {
+public class recDesenn {
 
 
     static int desen (int sayi1, int sayi2){
