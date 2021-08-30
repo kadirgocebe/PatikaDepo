@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class App {
+public class patikaOdev1 {
     public static void main(String[] args) {
 
         Scanner girdi = new Scanner(System.in);
