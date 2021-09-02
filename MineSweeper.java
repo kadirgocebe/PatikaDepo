@@ -1,9 +1,6 @@
 
-import java.util.Map;
 import java.util.Random;
 import java.util.Scanner;
-
- 
 
 public class MineSweeper { //Ana sınıfımız
 int rowNum, colNum,size; 
