@@ -1,84 +1,22 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2580
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset204 PTSerif-Bold;\f1\fnil\fcharset204 PTSerif-Regular;\f2\fswiss\fcharset0 Helvetica;
-}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red251\green2\blue7;
-}
-{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c100000;\cssrgb\c100000\c14913\c0;
-}
-{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
-{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid101\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid2}
-{\list\listtemplateid3\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid201\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid3}
-{\list\listtemplateid4\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid301\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid4}}
-{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}}
-\paperw11900\paperh16840\margl1440\margr1440\vieww25480\viewh8400\viewkind0
-\deftab720
-\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+	1.	film tablosunda bulunan title ve description sütunlarındaki verileri sıralayınız.
 
-\f0\b\fs30 \cf2 \cb3 	1.	\expnd0\expndtw0\kerning0
-film
-\f1\b0  tablosunda bulunan 
-\f0\b title
-\f1\b0  ve 
-\f0\b description
-\f1\b0  s\uc0\u252 tunlar\u305 ndaki verileri s\u305 ralay\u305 n\u305 z.\
+SELECT title, description FROM film;
 
-\f2\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
-\cf4 SELECT title, description FROM film;\
-\cf0 \
-\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+	2.	film tablosunda bulunan tüm sütunlardaki verileri film uzunluğu (length) 60 dan büyük VE 75 ten küçük olma koşullarıyla sıralayınız.
 
-\f0\b\fs30 \cf2 \cb3 	2.	\expnd0\expndtw0\kerning0
-film
-\f1\b0  tablosunda bulunan t\uc0\u252 m s\u252 tunlardaki verileri film uzunlu\u287 u (length) 60 dan b\u252 y\u252 k 
-\f0\b VE
-\f1\b0  75 ten k\uc0\u252 \u231 \u252 k olma ko\u351 ullar\u305 yla s\u305 ralay\u305 n\u305 z.\
+SELECT * FROM film WHERE length >60 AND length <75;
 
-\f2\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
-\cf4 SELECT * FROM film WHERE length >60 AND length <75;\
-\cf0 \
-\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
-\ls1\ilvl0
-\f0\b\fs30 \cf2 \cb3 {\listtext	3.	}\expnd0\expndtw0\kerning0
-film
-\f1\b0  tablosunda bulunan t\uc0\u252 m s\u252 tunlardaki verileri rental_rate 0.99 
-\f0\b VE
-\f1\b0  replacement_cost 12.99 
-\f0\b VEYA
-\f1\b0  28.99 olma ko\uc0\u351 ullar\u305 yla s\u305 ralay\u305 n\u305 z.\cb1 \
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+	3.	film tablosunda bulunan tüm sütunlardaki verileri rental_rate 0.99 VE replacement_cost 12.99 VEYA 28.99 olma koşullarıyla sıralayınız.
 
-\f2\fs24 \cf0 \kerning1\expnd0\expndtw0 \
-\cf4 SELECT * FROM film WHERE rental_rate = 0.99 AND (replacement_cost = 12.99 OR replacement_cost = 28.99);\
-\cf0 \
-\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
-\ls2\ilvl0
-\f0\b\fs30 \cf2 \cb3 {\listtext	4.	}\expnd0\expndtw0\kerning0
-customer
-\f1\b0  tablosunda bulunan first_name s\uc0\u252 tunundaki de\u287 eri 'Mary' olan m\u252 \u351 terinin last_name s\u252 tunundaki de\u287 eri nedir?\cb1 \
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+SELECT * FROM film WHERE rental_rate = 0.99 AND (replacement_cost = 12.99 OR replacement_cost = 28.99);
 
-\f2\fs24 \cf0 \kerning1\expnd0\expndtw0 \
-\cf4 SELECT last_name FROM customer WHERE first_name = 'Mary';\
-\cf0 \
-\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
-\ls3\ilvl0
-\f0\b\fs30 \cf2 \cb3 {\listtext	5.	}\expnd0\expndtw0\kerning0
-film
-\f1\b0  tablosundaki uzunlu\uc0\u287 u(length) 50 ten b\u252 y\u252 k OLMAYIP ayn\u305  zamanda rental_rate de\u287 eri 2.99 veya 4.99 OLMAYAN verileri s\u305 ralay\u305 n\u305 z.\cb1 \
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+	4.	customer tablosunda bulunan first_name sütunundaki değeri 'Mary' olan müşterinin last_name sütunundaki değeri nedir?
 
-\f2\fs24 \cf0 \kerning1\expnd0\expndtw0 \
-\cf4 SELECT * FROM film WHERE NOT(rental_rate = 2.99 OR rental_rate = 4.99) AND length < 50;\
-\cf0 \
-\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
-\ls4\ilvl0
-\f0\b\fs30 \cf2 \cb3 	
-\f1\b0 \cb1 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \
-\ls4\ilvl0
-\f0\b \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 	
-\f1\b0 \cb1 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \
-}
+SELECT last_name FROM customer WHERE first_name = 'Mary';
+
+	5.	film tablosundaki uzunluğu(length) 50 ten büyük OLMAYIP aynı zamanda rental_rate değeri 2.99 veya 4.99 OLMAYAN verileri sıralayınız.
+
+SELECT * FROM film WHERE NOT(rental_rate = 2.99 OR rental_rate = 4.99) AND length < 50;
+
+	
+	
